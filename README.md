@@ -3,8 +3,8 @@
 <!--
 **Ivanova2023/Ivanova2023** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 [![Header](D:\QA\Ivanova2023\assets\header.png)]
-## I'm a QA Engineer and Tutor. 
-## A creator of "Artsiom Rusau QA Life" Youtube channel 
+## I'm a Junior QA Engineer
+
 ## My CV
 [Link to my CV](https://drive.google.com/file/d/1HaeXlUL-Wttj7Vw5niHmE1ggbuYMVVBs/view?usp=sharing/)
 
