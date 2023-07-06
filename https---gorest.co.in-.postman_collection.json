@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "62ba9f04-d281-4feb-9b76-980dccdcc320",
+		"name": "https://gorest.co.in/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22531207"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "page12",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@test.com\",\r\n    \"name\": \"test\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "user \"id\": 2874806",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2874806"
+			},
+			"response": []
+		},
+		{
+			"name": "else New users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"email\": \"test2@test.com\",\r\n    \"name\": \"Anna\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "details new users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2918545"
+			},
+			"response": []
+		},
+		{
+			"name": "change user 2918545",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/public/v2/users/2918545?name=Maria&email=maria@test.com",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"2918545"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Maria"
+						},
+						{
+							"key": "email",
+							"value": "maria@test.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view user 2918545",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2918545"
+			},
+			"response": []
+		},
+		{
+			"name": "change status and email 2918549",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/public/v2/users/2918549?status=inactive&email=anna@test.com",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"2918549"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "inactive"
+						},
+						{
+							"key": "email",
+							"value": "anna@test.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user 2874806",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2874806"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user 2918545",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2918545"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user 2918549",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "{{url}}/public/v2/users/2918549"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token3}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/public/v2/users//2874806"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://gorest.co.in"
+		},
+		{
+			"key": "token",
+			"value": "5ca8d300e0c9562c8a7d95fbac7d4a374e159ca4524071ccf114fab4c78e48dd"
+		},
+		{
+			"key": "token1",
+			"value": "5ca8d300e0c9562c8a7d95fbac7d4a374e159ca4524071ccf114fab4c78e48dd"
+		},
+		{
+			"key": "token2",
+			"value": "5ca8d300e0c9562c8a7d95fbac7d4a374e159ca4524071ccf114fab4c78e48dd"
+		},
+		{
+			"key": "token3",
+			"value": "3dfe157aa7d1af7af9e90491930e73f5994a8bc44318a37b3cdc710a654da76c"
+		}
+	]
+}
